@@ -20,6 +20,7 @@ button{
     top: 20px;
     right: 20px;
     padding: 1rem;
+    transition: transform 0.3s ease-in-out;
 }
 nav{
     background-color: darkslategray;
@@ -29,9 +30,11 @@ nav{
     height: 100vh;
     padding: 2rem;
   transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
 }
 nav.active{
     transform: translateX(0);
+    
 }
 button.active{
     transform: translateX(-100px);
