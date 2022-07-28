@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+button{
+    background-color: blueviolet;
+    color: white;
+    font-family: inherit;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+.popup-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.popup-container.active{
+    display: flex;
+}
+
+/* popup  inside the Container*/
+.popup{
+    width: 500px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 2px 2px 10px rgb(0 0 0.3)
+}
+
+.popup button{
+    background-color: white;
+    color: blueviolet;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
